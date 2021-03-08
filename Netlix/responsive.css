@@ -1,0 +1,19 @@
+@media screen and (max-width: 700px){
+    header .container{
+        display: flex;
+        flex-direction: column; /*vai jogar pra baixo quando a tela alcançar 700px*/
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 190px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .descricao{
+        width: 50px;
+    }
+
+}

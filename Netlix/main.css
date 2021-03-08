@@ -1,0 +1,98 @@
+/* Para declarar uma variavel dentro do CSS é preciso declarar entro do root , desta forma :root{} */
+:root {
+    --veremelho: #E50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*limite de tudo o que esta dentro é a borda da caixa*/
+}
+/*base do programa*/
+
+body{
+    background: var(--preta);
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex; /*meneira de alinhar os tipos em tela*/
+    flex-direction: row;
+    align-items: center;/* alinha os documentos de maneira vertical*/
+    justify-content: space-between; /* distancia entre a primeira tag filha e a tag segunda*/
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--veremelho);
+    font-family: 'Arial Black', times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: #fff;
+}
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('recursos/foto-capa.jpg');
+    height: 400px;
+    background-size: cover;/*cover : pega a área de cobertura da página*/
+    display: flex;
+    flex-direction: column;/*coluna*/
+    justify-content: center;
+    align-items: flex-start;/*começa sempre da esquerda*/
+}
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding:15px 30px;/*lida com o espaço interno do elemnto*/
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+    text-decoration: none;
+
+}
+.botao:hover{
+    background-color: white;
+    color:black;
+}
+.botao i{
+    margin-right: 8px;
+}
+/* WRAPPER = envelopar*/
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 60%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
