@@ -5,89 +5,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <title>Relembrando HTML</title>
 </head>
 <body>
-    <nav>
-        <p>Minha Página</p>
-        <ul>
-            <li><a href="#servicos">SERVIÇOS</a></li>
-            <li><a href="#clientes">CLIENTES</a></li>
-            <li><a href="#parceiros">PARCEIROS</a></li>
-            <li><a href="#time">TIME</a></li>
-            <li><a href="#contato">CONTATO</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Minha Página</h1>
-        <p>
-            Oferecemos os melhores serviços em desenvolvimento de sites e aplicativos.
-        </p>
-    </header>
-    <section id="servicos">
-        <h2>SERVIÇOS</h2>
-        <p>
-            Oferecemos os melhores serviços em desenvolvimento de sites e aplicativos.
-        </p>
-        <div>
-            <img src="img/exec-negra.jpg" " class="img_padrao">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/android-chrome-512x512.png" width="100" height="80">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">SERVIÇOS </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#clientes">CLIENTES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="nav-link" href="#parceiros">PARCEIROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#time">TIME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">CONTATO</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <img src="img/app.jpg"  class="img_padrao">
+    </nav>
+    <section id="servicos">
+        <div class="container-fluid quem-somos tex-center margin">
+            <h2>SERVIÇOS</h2>
+
+            <div>
+                <img src="img/exec-negra.jpg" class="rounded-circle" width="400" height="400">
+            </div>
+            <h3 class="margin">
+                Oferecemos os melhores serviços em desenvolvimento de sites e aplicativos.
+            </h3>
         </div>
     </section>
     <section id="clientes">
-        <h2>CLIENTES</h2>
-        <p>
-            Nossos clientes ficaram muito satisfeitos com o  nosso serviço.
-        </p>
-        <div>
-            <img src="img/cliente1.jpg" class="img_padrao">
+        <div class="container-fluid tex-center margin clientes">
+            <h2 class="margin">CLIENTES</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="img/cliente1.jpg" width="80%">
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/Equipa-negra.jpg" width="80%">
+                    </div>
+                </div>
+            </div>
+            <h3 class="margin">
+                Nossos clientes ficaram muito satisfeitos com o  nosso serviço.
+            </h3>
         </div>
-        <div>
-            <img src="img/Equipa-negra.jpg"  class="img_padrao">
-        </div>
-
     </section>
     <section id="parceiros">
-        <h2>PARCEIROS</h2>
-        <p>Nossos parceiros nos ajudam a entregar as melhores soluções para nossos clientes.</p>
-        <div>
-            <a href="https://github.com/laisalamir" target="_blank">
-            <img src="img/android-chrome-512x512.png" class="img_padrao" ></a>
-
+        <div class="container-fluid quem-somos tex-center margin">
+            <h2 class="margin">PARCEIROS</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a href="https://github.com/laisalamir" target="_blank">
+                        <img src="img/android-chrome-512x512.png" width="45%" ></a>
+                        <h4>Preta No Code web development</h4>
+                    </div>
+            
+                    <div class="col-lg-6">
+                        <a href="https://web.digitalinnovation.one/track/sp-tech-desenvolvimento-front-end?tab=path" target="_blank">
+                        <img src="img/transferir.png" width="85%"></a>
+                        <h4>Digital innovation one Parceiro oficial.</h4>
+                    </div>
+                    
+                </div>
+            </div>
+            <h3 class="margin">Nossos parceiros nos ajudam a entregar as melhores soluções para nossos clientes.</h3>
         </div>
-        <div>
-            <a href="https://web.digitalinnovation.one/track/sp-tech-desenvolvimento-front-end?tab=path" target="_blank">
-            <img src="img/transferir.png" class="img_padrao"></a>
-        </div>
-    </section>
+    </section> 
     <section id="time">
-        <h2>TIME</h2>
-        <p>Nosso time trabalha com muita qualidade e empenho para entregar o melhor produto para nossos clientes.</p>
-        <div>
-            <img src="img/parceiro1.jpg" class="img_padrao">
+        <div class="container-fluid quem-somos tex-center margin">
+            <h2 class="margin">TIME</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                         <img src="img/parceiro1.jpg" width="75%">
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/parceiro2.jpg" width="110%">
+                    </div>
+                </div>
+            </div>
 
-        </div>
-        <div>
-            <img src="img/parceiro2.jpg" class="img_padrao">
+            <h3 class="margin">Nosso time trabalha com muita qualidade e empenho para entregar o melhor produto para nossos clientes.</h3>
         </div>
     </section>
     <section id="contato">
-        <h2>CONTATO</h2>
-        <p>Entre em contato com a nossa equipe</p>
-        <div>
-            <img src="img/email.png" class="logo">
-            <p><a href="mailto:contato@empresa.com">Contato@empresa.com</a></p>
+        <div class="container-fluid quem-somos tex-center margin">
+            <h2>CONTATO</h2>
+            <h3 class="margin">Entre em contato com a nossa equipe</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="img/email.png" width="10%">
+                        <p class="margin"><a href="mailto:contato@empresa.com">Contato@empresa.com</a></p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/tel.png" width="10%">
+                        <p class="margin"><a href="tel:+351999888777">+351 999 888 777</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="img/tel.png" class="logo">
-            <p><a href="tel:+351999888777">+351 999 888 777</a></p>
-        </div>
-        
     </section>
-    <footer>
-        <p>Desenvolvido por Laisa Lamir</p>
+    <footer id="footer">
+        <p> <b>Desenvolvido por Laisa Lamir<b></b></p>
     </footer>
 </body>
 </html>
